@@ -1,0 +1,49 @@
+.side-menu-item {
+  padding: 7px;
+  &:focus {
+    outline: none !important;
+  }
+  &:last-child {
+    border-top: solid 1px #cccccc;
+    padding: 8px 7px;
+  }
+  .ion-icon {
+    margin-right: 5px;
+    float: right;
+    margin-top: 2px;
+    font-size: 18px;
+  }
+  ul {
+  	margin: 0;
+  	padding: 0;
+  	li {
+  		padding-right: 8px;
+	    font-size: 14px;
+	    vertical-align: middle;
+	    list-style: none;
+  		img {
+  			margin-right: 10px;
+  			width: 22px;
+  			vertical-align: middle;
+  		}
+  		.sub-menu {
+  			padding: 5px 5px 0 15px;
+  			li {
+  				padding-top: 10px;
+  				&:focus {
+				  outline: none !important;
+				}
+  			} 
+  		}
+  	}
+  }	
+}
+
+.side-menu-label {
+  &:host {
+    --border-color: red;
+  }
+  .item-inner {
+    border: none !important;
+  }
+}

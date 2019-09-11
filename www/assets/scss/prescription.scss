@@ -1,0 +1,21 @@
+.datepicker-label {
+	position: absolute;
+    z-index: 100;
+    right: 15px;
+    top: 12px;
+    font-size: 18px;
+    color: #555555;
+}
+
+.add-medicine-color {
+	display: block;
+    font-size: 24px;
+    padding: 12px 0;
+    color: #ffffff;
+    &:hover {
+    	color: #ffffff;
+    }
+    &.remove {
+    	color: #dc3545;
+    }
+}

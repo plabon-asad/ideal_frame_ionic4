@@ -1,0 +1,381 @@
+/* Bootstrap normalize */
+.form-control {
+  border: inherit;
+  &:focus {
+    box-shadow: inherit
+  }
+}
+
+.btn-primary {
+  background-color: #00AD9A;
+  border: inherit;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: darken(#00AD9A, 1) !important;
+    border-color: darken(#00AD9A, 1) !important;
+    box-shadow: none !important;
+  }
+}
+
+ .top-header-wrapper {
+    padding: 10px;
+    text-align: center;
+ }
+
+.top-header {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.delete-link {
+  color: #EB737A;
+}
+
+.datepicker-wrapper {
+  font-size: 18px;
+  color: #555;
+  padding-top: 13px !important;
+  padding-bottom: 13px !important;
+}
+
+.upload-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  opacity: 0;
+}
+
+.custom-table {
+  margin-top: 10px;
+  width: 100%;
+  thead {
+    tr {
+      th {
+        padding: 7px 10px;
+        font-weight: normal;
+        border-right: solid 1px #ffffff;
+        border-top: solid 1px #ffffff;
+        border-bottom: solid 1px #ffffff;
+        background: #fdfdfd;
+        text-align: center;
+        font-size: 13px;
+        color: #333333;
+        &:first-child {
+          border-left: solid 1px #ffffff;
+        }
+      }
+    }
+  }
+  tbody {
+    border: solid 1px #ffffff;
+    tr {
+      td {
+        padding: 8px 10px;
+        border-top: solid 1px #ffffff !important;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+/* Color and bg-color declaration */
+.text-white {color: #fff}
+.text-blue {color: #0b95dd}
+.text-default {color: #4f4f4f}
+
+.text-link {
+  color: #fff;
+  text-decoration: none !important;
+  &:hover {
+    color: #efefef !important;
+  }
+}
+
+ion-ripple-effect {
+  &:focus {
+    outline: none !important; 
+  }
+}
+
+.reset-margin {margin: 0 !important;}
+.auto-margin {margin: 0 auto !important;}
+
+.bg-blue {
+  --background: #0b95dd;
+}
+
+.bg-default {
+  --background: #e7e7e7;
+}
+
+/* Gradient class declaration */
+
+// only for home component
+.home-gradient-bg {
+  --background: linear-gradient(to bottom, rgb(38, 166, 154) 0%, rgb(37, 143, 201) 100%);
+}
+
+.gradient-bg {
+  background: linear-gradient(to bottom, rgb(38, 166, 154) 0%, rgb(37, 143, 201) 100%);
+}
+
+.gradient-icon-bg {
+  background: linear-gradient(to bottom, rgb(231, 231, 231) 0%, rgb(38, 166, 154) 2%, rgb(37, 151, 187) 100%);
+}
+
+/* padding and margin class */
+.m-t-5 {margin-top: 5px}
+.m-b-5 {margin-bottom: 5px}
+.m-b-10 {margin-bottom: 10px}
+.m-t-15 {margin-top: 15px}
+.m-t-30 {margin-top: 30px}
+
+/* Form and button design */
+.input-primary {
+  padding: 0 25px;
+  --placeholder-color: #ddd;
+  height: 50px;
+}
+
+.select-option {
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  color: #555;
+  &:focus {border: inherit; outline: none}
+}
+
+.btn-custom {
+  padding: 12px;
+}
+
+/* Table design */
+.mhr-table {
+  border: 1px solid #fff;
+  thead {
+    background-color: #4E5A60;
+    text-align: center;
+    tr {
+      th {border-right: 1px solid #fff}
+    }
+  }
+  tbody {
+    tr {
+      td {
+        border-right: 1px solid #fff;
+      }
+    }
+  }
+}
+
+/* Item list show design */
+.list-container {
+  margin: 0 25px;
+  padding-top: 15px;
+}
+.list-content {
+  display: flex;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 10px;
+  &:focus {
+    outline: none !important;
+  }
+  &:last-child {
+    border-bottom: inherit;
+    padding-bottom: 20px;
+  }
+  .list-img {
+    display: flex;
+    align-items: flex-start;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    width: 80px;
+  }
+  .content {
+    flex: 1;
+    margin-left: 15px;
+    background-color: #bde3e4;
+    border-radius: 5px;
+    padding: 10px;
+    h5 {
+      font-size: 14px;
+      margin: 0 0 5px 0;
+      font-weight: bold;
+    }
+    .title {
+      font-size: 14px;
+    }
+  }
+}
+
+.form-wrap {
+  padding: 0 40px;
+}
+
+/* Border and border radius class */
+.border-radius-15 {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* ul style */
+.ul-common-style {padding: 0;margin: 0;list-style-type: none}
+.ul-inline {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  li {
+    display: inline-block;
+    padding-right: 8px;
+    font-size: 14px;
+    ion-icon {
+      font-size: 20px;
+      vertical-align: middle;
+    }
+  }
+}
+
+#validation-wrapper {
+  width: 100%;
+  border: 2px solid red;
+  padding: 7px 7px 0 7px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  h3 {
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0;
+    background-color: #c00;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  ul {
+    margin: 0;
+    padding-left: 15px;
+    li {
+      font-size: 13px;
+      list-style: square;
+      padding: 3px 0;
+    }
+  }
+}
+
+.space-60 {height: 60px;}
+.space-30{height: 30px;}
+
+/* Width and height related */
+.height-100vh {height: 100vh;}
+.width-100vw {height: 100vw;}
+
+/* Header logo and title design */
+.header-logo {
+  width: 80px;
+  display: inline-block;
+  vertical-align: middle;
+  height: auto;
+  margin-right: 35px;
+}
+
+.header-logo-title {
+  padding-left: 10px;
+  display: inline-block;
+}
+
+/* Card item design */
+.home-item {
+  text-align: center;
+  border-radius: 15px;
+  height: 110px;
+  width: 110px;
+  margin: 20px auto;
+  &:focus {
+    border-color: transparent !important;
+    outline: none;
+  }
+  ion-img.item-img {
+    display: inline-block;
+    width: 50px;
+  }
+  div.item-title {
+    color: #4f4f4f;
+    font-size: 12px;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-top: 10px;
+  }
+}
+
+/* App component (Main sidebar) */
+.sidebar-header {
+  background: -moz-linear-gradient(135deg, #4DB6AC 0%, #009688 50%, #009688 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #009688), color-stop(50%, #009688), color-stop(100%, #4DB6AC)); /* safari4+,chrome */
+  background: -webkit-linear-gradient(135deg, #4DB6AC 0%, #009688 50%, #009688 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(135deg, #4DB6AC 0%, #009688 50%, #009688 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(135deg, #4DB6AC 0%, #009688 50%, #009688 100%); /* ie10+ */
+  background: linear-gradient(315deg, #4DB6AC 0%, #009688 50%, #009688 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009688', endColorstr='#4DB6AC',GradientType=1 ); /* ie6-9 */
+  padding: 50px 15px 15px 15px;
+  color: #ffffff;
+  .avatar {
+    margin-bottom: 10px;
+    img {
+      border-radius: 100%;
+      width: 50px;
+      height: 50px;
+    }
+  }
+  p { margin: 0;}
+}
+
+.side-menu-item {
+  padding: 7px;
+  &:focus {
+    outline: none !important;
+  }
+  &:last-child {
+    border-top: solid 1px #cccccc;
+    padding: 8px 7px;
+  }
+  .ion-icon {
+    margin-right: 10px;
+    margin-top: 2px;
+    color: #555555;
+    font-size: 16px;
+    vertical-align: top;
+  }
+}
+
+.side-menu-label {
+  &:host {
+    --border-color: red;
+  }
+  .item-inner {
+    border: none !important;
+  }
+}
+
+.has-error {
+  .ng-invalid,
+  .ng-invalid + label {
+    background: #FDEBEC;
+    border: solid 1px #EB737A;
+    & + .error-msg {
+      display: block;
+    }
+  }
+  .ng-invalid + .select-handler {
+    & + .error-msg {
+      display: block;
+    } 
+  }
+}
