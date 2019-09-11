@@ -22,7 +22,7 @@ export class AppComponent {
         private statusBar: StatusBar,
     ) {
         this.initializeApp();
-        this.appPages = this.beforeAuth;
+        this.appPages;
     }
 
     initializeApp() {
